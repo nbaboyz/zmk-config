@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -66,11 +67,11 @@
         fn_layer {
             display-name = "fn";
             bindings = <
-&out OUT_TOG     &bt BT_PRV  &bt BT_NXT  &ext_power EP_ON  &trans
+&out OUT_TOG     &bt BT_PRV  &bt BT_NXT  &ext_power EP_ON  &bl BL_ON
 &trans           &trans      &trans      &rgb_ug RGB_HUD   &rgb_ug RGB_SPI
 &rgb_ug RGB_HUI  &trans      &bt BT_CLR  &rgb_ug RGB_EFR   &rgb_ug RGB_TOG
 &rgb_ug RGB_EFF  &trans      &trans      &rgb_ug RGB_BRD   &rgb_ug RGB_SPD
-&rgb_ug RGB_BRI  &trans      &soft_off   &rgb_ug RGB_SAD   &trans
+&rgb_ug RGB_BRI  &trans      &kp DEL     &rgb_ug RGB_SAD   &trans
 &rgb_ug RGB_SAI  &trans      &trans      &trans            &trans
             >;
 
