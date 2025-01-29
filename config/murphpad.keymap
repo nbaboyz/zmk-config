@@ -70,7 +70,7 @@
 &trans           &trans      &trans      &rgb_ug RGB_HUD   &rgb_ug RGB_SPI
 &rgb_ug RGB_HUI  &trans      &bt BT_CLR  &rgb_ug RGB_EFR   &rgb_ug RGB_TOG
 &rgb_ug RGB_EFF  &trans      &trans      &rgb_ug RGB_BRD   &rgb_ug RGB_SPD
-&rgb_ug RGB_BRI  &trans      &kp DEL     &rgb_ug RGB_SAD   &trans
+&rgb_ug RGB_BRI  &trans      &soft_off   &rgb_ug RGB_SAD   &trans
 &rgb_ug RGB_SAI  &trans      &trans      &trans            &trans
             >;
 
