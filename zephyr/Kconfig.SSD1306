@@ -1,0 +1,11 @@
+# Copyright (c) 2020 Phytec Messtechnik GmbH, Peter Johanson
+# SPDX-License-Identifier: Apache-2.0
+
+# SSD1306 display controller configuration options
+
+config SSD1306
+    bool "SSD1306 compatible display controller driver"
+    depends on SPI
+    depends on HEAP_MEM_POOL_SIZE != 0
+    help
+      Enable driver for SSD1306 compatible controller.
