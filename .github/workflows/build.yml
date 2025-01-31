@@ -4,12 +4,3 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-
-    steps:
-    - name: Cache Zephyr modules
-      uses: actions/cache@v2
-      with:
-        path: /tmp/zmk-config/modules/
-        key: ${{ runner.os }}-build-cache-zephyr-${{ hashFiles('**/zephyr/module.yml', '**/west.yml') }}
-        restore-keys: |
-          ${{ runner.os }}-build-cache-zephyr-
